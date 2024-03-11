@@ -5,6 +5,7 @@ class Todo(models.Model):
 
     title = models.CharField(max_length=255)
     due_date = models.DateField()
+    done=models.BooleanField(default=False)
     completed = models.BooleanField(default=False)
     favourite = models.BooleanField(default=False)
 
